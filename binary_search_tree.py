@@ -90,8 +90,8 @@ class BinarySearchTree(object):
             return self.get_max(self.root)
 
     def get_max(self, node):
-        if node.left_child:
-            return self.get_max(node.left_child)
+        if node.right_child:
+            return self.get_max(node.right_child)
 
         return node.data
 
@@ -115,7 +115,9 @@ bst.insert(10)
 bst.insert(13)
 bst.insert(5)
 bst.insert(14)
-bst.remove(10)
+# bst.remove(10)
 
+print(bst.get_min_value())
+print(bst.get_max_value())
 bst.traverse()
 
