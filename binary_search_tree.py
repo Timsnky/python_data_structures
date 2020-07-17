@@ -14,22 +14,18 @@ class BinarySearchTree(object):
 
     # O(log N) or O (N) if unbalanced
     def insert(self, data):
-        if self.root:
-            self.insert_node(self.root, data)
-        else:
-            self.root = Node(data)
+        self.root = self.insert_node(self.root, data)
 
     def insert_node(self, node, data):
+        if not node:
+            return Node(data)
+        
         if node.data > data:
-            if node.left_child:
-                self.insert_node(node.left_child, data)
-            else:
-                node.left_child = Node(data)
+            node.left_child = self.insert_node(node.left_child, data)
         else:
-            if node.right_child:
-                self.insert_node(node.right_child, data)
-            else:
-                node.right_child = Node(data)
+            node.right_child = self.insert_node(node.right_child, data)
+
+        return node
 
     # O(log N) or O (N) if unbalanced
     def remove(self, data):
