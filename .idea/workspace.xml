@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c931aa89-5105-4034-80d0-a3fd6f8ede6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tst.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphs/breadth_first_search.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +54,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager" selected="Python.tst">
@@ -155,7 +156,8 @@
       <workItem from="1594839758321" duration="735000" />
       <workItem from="1594840556742" duration="451000" />
       <workItem from="1594867275101" duration="6846000" />
-      <workItem from="1594987271581" duration="2351000" />
+      <workItem from="1594987271581" duration="3277000" />
+      <workItem from="1596184537901" duration="1413000" />
     </task>
     <servers />
   </component>
@@ -165,11 +167,33 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
           </value>
         </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="1" value="TOOL_WINDOW" />
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
@@ -187,22 +211,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="832" y="438" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1594867309095" />
-    <state width="1019" height="284" key="GridCell.Tab.0.bottom" timestamp="1594880470964">
+    <state width="1019" height="281" key="GridCell.Tab.0.bottom" timestamp="1594992738110">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1019" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594880470964" />
-    <state width="1019" height="284" key="GridCell.Tab.0.center" timestamp="1594880470964">
+    <state width="1019" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594992738110" />
+    <state width="1019" height="281" key="GridCell.Tab.0.center" timestamp="1594992738110">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1019" height="284" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594880470964" />
-    <state width="1019" height="284" key="GridCell.Tab.0.left" timestamp="1594880470964">
+    <state width="1019" height="281" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594992738110" />
+    <state width="1019" height="281" key="GridCell.Tab.0.left" timestamp="1594992738110">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1019" height="284" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594880470964" />
-    <state width="1019" height="284" key="GridCell.Tab.0.right" timestamp="1594880470964">
+    <state width="1019" height="281" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594992738110" />
+    <state width="1019" height="281" key="GridCell.Tab.0.right" timestamp="1594992738110">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1019" height="284" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594880470964" />
+    <state width="1019" height="281" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594992738110" />
     <state width="1519" height="283" key="GridCell.Tab.1.bottom" timestamp="1593432213312">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
