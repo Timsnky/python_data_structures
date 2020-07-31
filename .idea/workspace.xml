@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c931aa89-5105-4034-80d0-a3fd6f8ede6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/graphs/breadth_first_search.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/graphs/depth_first_search.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +57,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.tst">
+  <component name="RunManager" selected="Python.depth_first_search">
     <configuration name="avl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_data_structures" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,6 +102,50 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="breadth_first_search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_data_structures" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/graphs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graphs/breadth_first_search.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="depth_first_search" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python_data_structures" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/graphs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/graphs/depth_first_search.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="tst" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python_data_structures" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,6 +170,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.depth_first_search" />
+        <item itemvalue="Python.breadth_first_search" />
         <item itemvalue="Python.tst" />
         <item itemvalue="Python.avl" />
         <item itemvalue="Python.binary_search_tree" />
@@ -157,7 +203,7 @@
       <workItem from="1594840556742" duration="451000" />
       <workItem from="1594867275101" duration="6846000" />
       <workItem from="1594987271581" duration="3277000" />
-      <workItem from="1596184537901" duration="1413000" />
+      <workItem from="1596184537901" duration="5163000" />
     </task>
     <servers />
   </component>
@@ -211,22 +257,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="832" y="438" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1594867309095" />
-    <state width="1019" height="281" key="GridCell.Tab.0.bottom" timestamp="1594992738110">
+    <state width="984" height="281" key="GridCell.Tab.0.bottom" timestamp="1596202569580">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1019" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594992738110" />
-    <state width="1019" height="281" key="GridCell.Tab.0.center" timestamp="1594992738110">
+    <state width="984" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1596202569580" />
+    <state width="984" height="281" key="GridCell.Tab.0.center" timestamp="1596202569579">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1019" height="281" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594992738110" />
-    <state width="1019" height="281" key="GridCell.Tab.0.left" timestamp="1594992738110">
+    <state width="984" height="281" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1596202569579" />
+    <state width="984" height="281" key="GridCell.Tab.0.left" timestamp="1596202569579">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1019" height="281" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594992738110" />
-    <state width="1019" height="281" key="GridCell.Tab.0.right" timestamp="1594992738110">
+    <state width="984" height="281" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1596202569579" />
+    <state width="984" height="281" key="GridCell.Tab.0.right" timestamp="1596202569579">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1019" height="281" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594992738110" />
+    <state width="984" height="281" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1596202569579" />
     <state width="1519" height="283" key="GridCell.Tab.1.bottom" timestamp="1593432213312">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -255,5 +301,7 @@
     <SUITE FILE_PATH="coverage/python_data_structures$tst.coverage" NAME="tst Coverage Results" MODIFIED="1594991561459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/python_data_structures$avl.coverage" NAME="avl Coverage Results" MODIFIED="1594880345092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/data_structures$binary_search_tree.coverage" NAME="binary_search_tree Coverage Results" MODIFIED="1594096946431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/python_data_structures$depth_first_search.coverage" NAME="depth_first_search Coverage Results" MODIFIED="1596202569562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graphs" />
+    <SUITE FILE_PATH="coverage/python_data_structures$breadth_first_search.coverage" NAME="breadth_first_search Coverage Results" MODIFIED="1596195944504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graphs" />
   </component>
 </project>
