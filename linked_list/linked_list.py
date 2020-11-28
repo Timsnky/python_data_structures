@@ -61,3 +61,6 @@ class LinkedList(object):
                 self.head = current_node.next_node
             else:
                 previous_node.next_node = current_node.next_node
+
+ll = LinkedList()
+ll.insert_end(2)

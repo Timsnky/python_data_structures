@@ -1,0 +1,7 @@
+    1> # Create multi-line file to use in testing.
+    2> with open('testFrom.py', 'w') as e:
+    3>     e.write("To be, or not to be: that is the question:"+"\n"
+    4> "Whether 'tis nobler in the mind to suffer"+"\n"
+    5> "The slings and arrows of outrageous fortune,"+"\n"
+    6> "Or to take arms against a sea of troubles,"+"\n"
+    7> "And by opposing end them? To die: to sleep;")
