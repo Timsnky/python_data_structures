@@ -77,7 +77,7 @@ def merge_two_lists(self, list1: ListNode | None, list2: ListNode | None) -> Lis
     return dummy.next
 
 
-def remove_duplicates_2(nums: list[int]) -> int:
+def remove_duplicates(nums: list[int]) -> int:
     if len(nums) == 0:
         return 0
 
@@ -94,9 +94,89 @@ def remove_duplicates_2(nums: list[int]) -> int:
 
     return write_index
 
-nums = [0,0,1,1,1,2,2,3,3,4]
-print (remove_duplicates_2(nums))
-print (nums)
+# nums = [0,0,1,1,1,2,2,3,3,4]
+# print (remove_duplicates(nums))
+# print (nums)
+
+def remove_element(nums: list[int], var : int) -> int:
+    if not nums:
+        return 0
+
+    write_index = 0
+    for read_index in range(len(nums)):
+        if nums[read_index] == var:
+            continue
+        else:
+            nums[write_index] = nums[read_index]
+            write_index += 1
+    return write_index
+
+# nums = [0,0,1,1,1,2,2,3,3,4]
+# print (remove_element(nums, 1))
+# print (nums)
 
 
+def str_first_occurrence(haystack: str, needle: str) -> int:
+    return str.find(haystack, needle)
 
+def str_first_occurrence_2(haystack: str, needle: str) -> int:
+    match_index = 0
+    needle_index = 0
+    for read_index in range(len(haystack)):
+        current_haystack_char = haystack[read_index]
+        current_needle_char = needle[needle_index]
+        if haystack[read_index] == needle[needle_index]:
+            if needle_index == 0:
+                match_index = read_index
+            needle_index += 1
+        else:
+            match_index = read_index
+            needle_index = 0
+
+        if needle_index == len(needle):
+            return match_index
+
+    return -1
+
+def str_first_occurrence_3(haystack: str, needle: str) -> int:
+    for index in range(len(haystack)):
+        if haystack[index] == needle[0]:
+            if index + len(needle) <= len(haystack) and haystack[index:index + len(needle)] == needle:
+                return index
+
+    return -1
+
+# haystack = "sadbutsad"
+# needle = "sad"
+# haystack = "leetcode"
+# needle = "leeto"
+
+# haystack ="mississippi"
+# needle = "issip"
+# print(str_first_occurrence_3(haystack, needle))
+# print(str_first_occurrence(haystack, needle))
+
+def search_insert(nums: list[int], target: int) -> int:
+    for index in range(len(nums)):
+        if nums[index] >= target:
+            return index
+
+    return len(nums)
+
+
+def length_of_last_word(s: str) -> int:
+    length = 0
+    index = len(s) - 1
+    while index >= 0:
+        if s[index] != ' ':
+            length += 1
+        else:
+            if length != 0:
+                return length
+        index -= 1
+    return length
+
+# s = "Hello World"
+# s = "   fly me   to   the moon  "
+s = "luffy is still joyboy"
+print(length_of_last_word(s))
