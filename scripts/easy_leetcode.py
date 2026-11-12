@@ -178,5 +178,131 @@ def length_of_last_word(s: str) -> int:
 
 # s = "Hello World"
 # s = "   fly me   to   the moon  "
-s = "luffy is still joyboy"
-print(length_of_last_word(s))
+# s = "luffy is still joyboy"
+# print(length_of_last_word(s))
+
+
+def plus_one(digits: list[int]) -> list[int]:
+    start_string = ''
+    for num in digits:
+        start_string += str(num)
+
+    value_string = str(int(start_string) + 1)
+    new_list = []
+    for char in value_string:
+        new_list.append(int(char))
+
+    return new_list
+
+# digits = [1,2,3]
+# digits = [9]
+# print(plus_one(digits))
+def add_binary_2(a : str, b : str) -> str:
+    return str(bin(int(a, 2) + int(b, 2)))[2:]
+
+
+def add_binary(a : str, b : str) -> str:
+    a_value = 0
+    for index in range(len(a) - 1, -1, -1):
+        a_value += (int(a[index]) * (2 ** (len(a) - 1 - index)))
+
+    b_value = 0
+    for index in range(len(b) - 1, -1, -1):
+        b_value += (int(b[index]) * (2 ** (len(b) - 1 - index)))
+
+    final_value = a_value + b_value
+    if final_value == 0:
+        return '0'
+
+    final_value_str = ''
+    while final_value > 0:
+        final_value_str += str(final_value % 2)
+        final_value = final_value // 2
+
+    return final_value_str[::-1]
+
+
+
+# a = "11"
+# b = "1"
+# print(add_binary_2(a, b))
+
+def detect_capital_use(word: str) -> bool:
+    return str.upper(word) == word or str.lower(word) == word or (str.upper(word[0]) == word[0] and str.lower(word[1:]) == word[1:])
+
+def detect_capital_use_2(word: str) -> bool:
+    return word.isupper() or word.islower() or word == word.capitalize()
+
+def reverse_words(self, s: str) -> str:
+    return ' '.join(word[::-1] for word in s.split(' '))
+
+
+def matrix_reshape(mat: list[list[int]], r: int, c: int) -> list[list[int]]:
+    if (len(mat) * len(mat[0])) != (r * c):
+        return mat
+
+    new_mat = [[]]
+    r_index = 0
+    for m_list in mat:
+        for n_item in m_list:
+            if len(new_mat[r_index]) < c:
+                new_mat[r_index].append(n_item)
+            else:
+                new_mat.append([n_item])
+                r_index += 1
+
+    return new_mat
+
+# mat = [[1,2],[3,4]]
+# r = 1
+# c = 4
+# mat = [[1,2],[3,4]]
+# r = 4
+# c = 1
+# print(matrix_reshape(mat, r, c))
+
+
+# Definition for a binary tree node.
+class TreeNode:
+    def __init__(self, val=0, left=None, right=None):
+        self.val = val
+        self.left = left
+        self.right = right
+
+def populate_tree(tree_list : list[int]) -> TreeNode | None:
+    tree = None
+    for item in tree_list:
+        if not tree:
+            tree = TreeNode(item)
+            continue
+
+        if not tree.left:
+            tree.left = TreeNode(item)
+            continue
+
+        if not tree.right:
+            tree.right = TreeNode(item)
+            continue
+
+
+
+
+
+
+def is_subtree(root: TreeNode | None, sub_root: TreeNode | None) -> bool:
+    if not root or not sub_root:
+        return False
+
+    current_root = root
+    while current_root:
+        if current_root.val != sub_root.val:
+            return False
+
+        return is_subtree(current_root.left, sub_root.left) and is_subtree(current_root.right, sub_root.right)
+
+    return True
+
+root = [3, 4, 5, 1, 2]
+subRoot = [4, 1, 2]
+
+

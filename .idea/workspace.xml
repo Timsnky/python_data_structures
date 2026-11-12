@@ -20,10 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c931aa89-5105-4034-80d0-a3fd6f8ede6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/hello.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/easy_leetcode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/easy_leetcode.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/easy_leetcode.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -261,7 +259,7 @@
       <workItem from="1605174505981" duration="741000" />
       <workItem from="1605206328379" duration="16000" />
       <workItem from="1606542382579" duration="4092000" />
-      <workItem from="1794471542081" duration="9414000" />
+      <workItem from="1794471542081" duration="19045000" />
     </task>
     <servers />
   </component>
@@ -325,7 +323,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/python_data_structures$copier.coverage" NAME="copier Coverage Results" MODIFIED="1604831484779" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/files" />
     <SUITE FILE_PATH="coverage/python_data_structures$merge_sort.coverage" NAME="merge_sort Coverage Results" MODIFIED="1605154355931" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting" />
-    <SUITE FILE_PATH="coverage/python_data_structures$easy_leetcode.coverage" NAME="easy_leetcode Coverage Results" MODIFIED="1794489522354" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
+    <SUITE FILE_PATH="coverage/python_data_structures$easy_leetcode.coverage" NAME="easy_leetcode Coverage Results" MODIFIED="1794504675840" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scripts" />
     <SUITE FILE_PATH="coverage/python_data_structures$bubble_sort.coverage" NAME="bubble_sort Coverage Results" MODIFIED="1605156844323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sorting" />
     <SUITE FILE_PATH="coverage/python_data_structures$depth_first_search1.coverage" NAME="depth_first_search1 Coverage Results" MODIFIED="1606544887753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/graphs" />
     <SUITE FILE_PATH="coverage/python_data_structures$hashtable.coverage" NAME="hashtable Coverage Results" MODIFIED="1605037145732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hashtable" />
