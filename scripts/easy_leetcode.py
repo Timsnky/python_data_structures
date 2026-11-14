@@ -1,3 +1,6 @@
+from collections import deque
+
+
 def reverse_parentheses(s):
     stack = ['']
 
@@ -270,39 +273,88 @@ class TreeNode:
         self.right = right
 
 def populate_tree(tree_list : list[int]) -> TreeNode | None:
-    tree = None
-    for item in tree_list:
-        if not tree:
-            tree = TreeNode(item)
-            continue
+    if not tree_list or tree_list[0] is None:
+        return None
 
-        if not tree.left:
-            tree.left = TreeNode(item)
-            continue
+    tree_queue = deque()
+    tree_node = TreeNode(tree_list[0])
+    tree_queue.append(tree_node)
 
-        if not tree.right:
-            tree.right = TreeNode(item)
-            continue
+    for index in range(1, len(tree_list), 2):
+        current_parent = tree_queue.popleft()
 
+        left_value = tree_list[index]
+        if left_value is not None:
+            current_parent.left = TreeNode(left_value)
+            tree_queue.append(current_parent.left)
 
+        if index + 1 < len(tree_list):
+            right_value = tree_list[index + 1]
+            if right_value is not None:
+                current_parent.right = TreeNode(right_value)
+                tree_queue.append(current_parent.right)
 
-
-
+    return tree_node
 
 def is_subtree(root: TreeNode | None, sub_root: TreeNode | None) -> bool:
-    if not root or not sub_root:
-        return False
+    def is_same_tree(root: TreeNode | None, sub_root: TreeNode | None) -> bool:
+        if root is None and sub_root is None:
+            return True
 
-    current_root = root
-    while current_root:
-        if current_root.val != sub_root.val:
+        if root is None or sub_root is None:
             return False
 
-        return is_subtree(current_root.left, sub_root.left) and is_subtree(current_root.right, sub_root.right)
+        return (root.val == sub_root.val
+                and is_same_tree(root.left, sub_root.left)
+                and is_same_tree(root.right, sub_root.right))
 
-    return True
+    if sub_root is None:
+        return True
 
-root = [3, 4, 5, 1, 2]
-subRoot = [4, 1, 2]
+    if root is None:
+        return False
+
+    return (is_same_tree(root, sub_root)
+            or is_subtree(root.left, sub_root)
+            or is_subtree(root.right, sub_root))
+
+
+def is_subtree_2(root: TreeNode | None, sub_root: TreeNode | None) -> bool:
+    def depth_first_explode(root: TreeNode | None) -> list:
+        tree_list = []
+        tree_stack = [root]
+
+        while tree_stack:
+            node = tree_stack.pop()
+
+            if node is None:
+                tree_list.append(None)
+            else:
+                tree_list.append(node.val)
+                tree_stack.append(node.right)
+                tree_stack.append(node.left)
+
+        return tree_list
+
+    root_list = depth_first_explode(root)
+    sub_root_list = depth_first_explode(sub_root)
+
+    root_list_string = "," + ",".join(map(str, root_list))
+    sub_root_list_string = "," +  ",".join(map(str, sub_root_list))
+
+    return sub_root_list_string in root_list_string
+
+
+# root = [3, 4, 5, 1, 2]
+# sub_root = [4, 1, 2]
+root = [3, 5, 7, 4, 8, 10, 6, 1, 2, 10]
+sub_root = [4, 1, 2]
+root_tree = populate_tree(root)
+sub_root_tree = populate_tree(sub_root)
+print(is_subtree_2(root_tree, sub_root_tree))
+
+
+
+
 
 
