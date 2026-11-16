@@ -221,6 +221,55 @@ def reverse_integer_2(x: int) -> int:
 # x = -2147483648
 # print(reverse_integer_2(x))
 
+def my_atoi(s: str) -> int:
+    is_negative = False
+    result = None
+    for char in s:
+        if char == " ":
+            if result is not None:
+                break
+            continue
+
+        if char == "-" or char == "+":
+            if result is not None:
+                break
+            is_negative = char == "-"
+            result = 0
+            continue
+
+        char_ord = ord(char)
+        if char_ord < 48 or char_ord > 57:
+            break
+
+        int_value = char_ord - 48
+        if result is None:
+            result = 0
+        result = result * 10  + int_value
+
+        if is_negative and -result <= -2 ** 31:
+            return -2 ** 31
+        elif not is_negative and result >= (2 ** 31) - 1:
+            return (2 ** 31) - 1
+
+    if result is None:
+        result = 0
+
+    if is_negative:
+        result = -result
+
+    return result
+
+# s = "42"
+# s = " -042"
+# s = "1337c0d3"
+# s = "0-1"
+# s = "words and 987"
+# s = '+-12'
+# s ="-2147483647"
+# print(my_atoi(s))
+
+
+
 
 
 
