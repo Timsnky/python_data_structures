@@ -159,8 +159,71 @@ def longest_palindrome_2(s: str) -> str:
 
 # s = "babad"
 # s = "cbbd"
-s = "a"
-print(longest_palindrome(s))
+# s = "a"
+# print(longest_palindrome(s))
+
+
+def convert(s: str, num_rows: int) -> str:
+    if num_rows == 1 or num_rows >= len(s):
+        return s
+
+    s_nested_list = ["" for _ in range(num_rows)]
+    row_index = 0
+    direction = 1
+
+    for char in s:
+        s_nested_list[row_index] += char
+
+        if row_index == 0:
+            direction = 1
+        elif row_index == num_rows - 1:
+            direction = -1
+
+        row_index += direction
+
+    return ''.join(s_nested_list)
+
+# s = "PAYPALISHIRING"
+# num_rows = 3
+# print(convert(s, num_rows))
+
+
+def reverse_integer(x: int) -> int:
+    is_negative = x < 0
+    reversed_x = str(abs(x))[::-1]
+    if is_negative:
+        reversed_x = "-" + reversed_x
+
+    return int(reversed_x)
+
+
+def reverse_integer_2(x: int) -> int:
+    is_negative = x < 0
+    x = -abs(x)
+    result = 0
+    last_digit_limit = -8 if is_negative else -7
+
+    while x != 0:
+        last_digit = x % -10
+        x = (x - last_digit) // 10
+
+        if result < -214748364:
+            return 0
+
+        if result == -214748364 and last_digit < last_digit_limit:
+            return 0
+
+        result = result * 10 + last_digit
+
+    return result if is_negative else -result
+
+# x = -123
+# x = -2147483648
+# print(reverse_integer_2(x))
+
+
+
+
 
 
 
